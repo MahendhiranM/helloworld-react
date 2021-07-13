@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Box from "./Box";
+import "./style.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = ()  => {
+	return (
+		<div>
+			<div className="flexContainer">
+				<Box text="H" color="#76448A" />
+				<Box text="E" color="#2471A3" />
+				<Box text="L" color="#17A589" />
+				<Box text="L" color="#229954" />
+				<Box text="O" color="#F1C40F" />
+				<Box text="W" color="#D35400" />
+				<Box text="O" color="#7F8C8D" />
+				<Box text="L" color="#34495E" />
+				<Box text="R" color="#1C2833" />
+				<Box text="D" color="#E74C3C" />
+			</div>
+		</div>
+	);
+};;
 
 export default App;
